@@ -36,6 +36,7 @@ Here is my ScanEntryItemView
     }
 }`
 And this is how I was able to use the ScanEntryItemView in a List
+
 `List{
    ForEach(self.entries){ entry in
        NavigationLink(destination: ScanEntryDetailView(scanEntry: .constant(entry))){
@@ -44,6 +45,7 @@ And this is how I was able to use the ScanEntryItemView in a List
    }
 }
 `
+
 ### Other SwiftUI Sources
 https://fuckingswiftui.com
 https://medium.com/flawless-app-stories/mvvm-in-swiftui-8a2e9cc2964a
