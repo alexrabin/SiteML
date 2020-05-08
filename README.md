@@ -5,7 +5,8 @@ This is a project I worked on during quarantine. SiteML uses SwiftUI, CoreData, 
 Using SwiftUI was fairly easy in my experience. My favorite source is https://fuckingswiftui.com
 Here is my ScanEntryItemView
 
-`struct ScanEntryItemView: View {
+```
+struct ScanEntryItemView: View {
     var image : Data = .init(count: 0)
     var createdAt : Date = Date()
     var foundText : Bool = false
@@ -34,10 +35,13 @@ Here is my ScanEntryItemView
             
         }.padding()
     }
-}`
+}
+```
+
 And this is how I was able to use the ScanEntryItemView in a List
 
-`List{ 
+```
+List{ 
    ForEach(self.entries){ entry in
    
        NavigationLink(destination: ScanEntryDetailView(scanEntry: .constant(entry))){
@@ -46,7 +50,8 @@ And this is how I was able to use the ScanEntryItemView in a List
         
        }
    }
-}`
+}
+```
 
 
 ### Other SwiftUI Sources
