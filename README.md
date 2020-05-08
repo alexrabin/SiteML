@@ -44,14 +44,10 @@ And this is how I was able to use the ScanEntryItemView in a List
        
            ScanEntryItemView(image: entry.image!, createdAt: entry.createdAt!, foundText: entry.ocrText != nil, hasImageCategories: entry.imageLabels != nil)
         
-        
        }
-       
    }
-   
-}
+}`
 
-`
 
 ### Other SwiftUI Sources
 https://fuckingswiftui.com
