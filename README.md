@@ -38,12 +38,19 @@ Here is my ScanEntryItemView
 And this is how I was able to use the ScanEntryItemView in a List
 
 `List{
+
    ForEach(self.entries){ entry in
+   
        NavigationLink(destination: ScanEntryDetailView(scanEntry: .constant(entry))){
+       
            ScanEntryItemView(image: entry.image!, createdAt: entry.createdAt!, foundText: entry.ocrText != nil, hasImageCategories: entry.imageLabels != nil)
+           
        }
+       
    }
+   
 }
+
 `
 
 ### Other SwiftUI Sources
